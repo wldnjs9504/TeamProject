@@ -101,6 +101,7 @@ String id = (String)session.getAttribute("id");
 		<div class="container">
 			<nav class="nav-menu mobile-menu">
 				<ul>
+					<li id="m01"><a href="board/board.jsp">전체</a></li>
 					<li id="m01"><a href="board/board.jsp?category=1">피로/간</a></li>
 					<li id="m02"><a href="board/board.jsp?category=2">수면/스트레스</a></li>
 					<li id="m03"><a href="board/board.jsp?category=3">피부</a></li>
