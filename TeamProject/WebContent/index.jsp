@@ -33,7 +33,7 @@
     </div>
 	
 	<!-- 헤더 -->
-    <%@include file="inc/header.jsp" %>
+    <%@include file="/inc/header.jsp" %>
 
     <!-- Hero Section Begin -->
     <section class="hero-section">

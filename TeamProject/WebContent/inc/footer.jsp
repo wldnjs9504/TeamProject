@@ -6,7 +6,7 @@
 			<div class="col-lg-8">
 				<div class="footer-left">
 					<div class="footer-logo">
-						<a href="#"><img src="img/logo_sample2_footer.png" alt="" height="30px" width=auto></a>
+						<a href="#"><img src="<%=request.getContextPath() %>/img/logo_sample2_footer.png" alt="" height="30px" width=auto></a>
 					</div>
 					<ul>
 						<li>Address: 부산광역시 부산진구 동천로 109<br> 
@@ -45,7 +45,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</div>
 					<div class="payment-pic">
-						<img src="img/payment-method.png" alt="">
+						<img src="<%=request.getContextPath() %>/img/payment-method.png" alt="">
 					</div>
 				</div>
 			</div>

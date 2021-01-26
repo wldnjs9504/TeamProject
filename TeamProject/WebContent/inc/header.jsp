@@ -9,16 +9,16 @@ String id = (String)session.getAttribute("id");
 		<div class="container">
 			<div class="ht-right">
 			<%if(id == null || id.isEmpty()) { %>
-				<a href="#" class="login-panel"><i class="fa fa-user"></i>Join</a>
-				<a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
+				<a href="<%=request.getContextPath() %>/member/join.jsp" class="login-panel"><i class="fa fa-user"></i>Join</a>
+				<a href="<%=request.getContextPath() %>/member/login.jsp" class="login-panel"><i class="fa fa-user"></i>Login</a>
 			<%}else if(id.equals("admin")){	%>
-				<a href="#" class="login-panel"><i class="fa fa-user"></i>Logout</a>
-				<!-- id 클릭시 관리자 페이지로 이동 -->
-				<a href="#" class="login-panel">id</a>님 환영합니다.
+				<a href="<%=request.getContextPath() %>/member/logout.jsp" class="login-panel"><i class="fa fa-user"></i>Logout</a>
+				<!-- id 클릭시 관리자 페이지로 이동. jsp 페이지명 변경될 수 있음 -->
+				<a href="<%=request.getContextPath() %>/admin/admin.jsp" class="login-panel">id</a>님 환영합니다.
 			<%}else{ %>
-				<a href="#" class="login-panel"><i class="fa fa-user"></i>Logout</a>
-				<!-- id 클릭시 회원 페이지로 이동 -->			
-				<a href="#" class="login-panel">id</a>님 환영합니다.
+				<a href="<%=request.getContextPath() %>/member/logout.jsp" class="login-panel"><i class="fa fa-user"></i>Logout</a>
+				<!-- id 클릭시 회원정보 페이지로 이동 -->			
+				<a href="<%=request.getContextPath() %>/member/info.jsp" class="login-panel">id</a>님 환영합니다.
 			<%} %>
 			</div>
 		</div>
@@ -28,13 +28,13 @@ String id = (String)session.getAttribute("id");
 			<div class="row">
 				<div class="col-lg-2 col-md-2">
 					<div class="logo">
-						<a href="./index.html">
-							<img src="img/logo_sample1.png" alt="logo">
+						<a href="<%=request.getContextPath() %>/index.jsp">
+							<img src="<%=request.getContextPath() %>/img/logo_sample1.png" alt="logo">
 						</a>
 					</div>
 				</div>
 				<div class="col-lg-7 col-md-7">
-					<form action="../board/board.jsp" method="post">
+					<form action="<%=request.getContextPath() %>/board/board.jsp" method="post">
 						<%@include file="search.jsp" %>
 					</form>
 				</div>
@@ -56,7 +56,7 @@ String id = (String)session.getAttribute("id");
 									<table>
 										<tbody>
 											<tr>
-												<td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
+												<td class="si-pic"><img src="<%=request.getContextPath() %>/img/select-product-1.jpg" alt=""></td>
 												<td class="si-text">
 													<div class="product-selected">
 														<p>$60.00 x 1</p>
@@ -68,7 +68,7 @@ String id = (String)session.getAttribute("id");
 												</td>
 											</tr>
 											<tr>
-												<td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
+												<td class="si-pic"><img src="<%=request.getContextPath() %>/img/select-product-2.jpg" alt=""></td>
 												<td class="si-text">
 													<div class="product-selected">
 														<p>$60.00 x 1</p>
@@ -101,13 +101,13 @@ String id = (String)session.getAttribute("id");
 		<div class="container">
 			<nav class="nav-menu mobile-menu">
 				<ul>
-					<li id="m01"><a href="board/board.jsp">전체</a></li>
-					<li id="m01"><a href="board/board.jsp?category=1">피로/간</a></li>
-					<li id="m02"><a href="board/board.jsp?category=2">수면/스트레스</a></li>
-					<li id="m03"><a href="board/board.jsp?category=3">피부</a></li>
-					<li id="m04"><a href="board/board.jsp?category=4">눈</a></li>
-					<li id="m05"><a href="board/board.jsp?category=5">두뇌활동</a></li>
-					<li id="m06"><a href="board/board.jsp?category=6">심장/혈관/혈당</a></li>
+					<li id="m01"><a href="<%=request.getContextPath() %>/board/board.jsp">전체</a></li>
+					<li id="m01"><a href="<%=request.getContextPath() %>/board/board.jsp?category=1">피로/간</a></li>
+					<li id="m02"><a href="<%=request.getContextPath() %>/board/board.jsp?category=2">수면/스트레스</a></li>
+					<li id="m03"><a href="<%=request.getContextPath() %>/board/board.jsp?category=3">피부</a></li>
+					<li id="m04"><a href="<%=request.getContextPath() %>/board/board.jsp?category=4">눈</a></li>
+					<li id="m05"><a href="<%=request.getContextPath() %>/board/board.jsp?category=5">두뇌활동</a></li>
+					<li id="m06"><a href="<%=request.getContextPath() %>/board/board.jsp?category=6">심장/혈관/혈당</a></li>
 				</ul>
 			</nav>
 			<div id="mobile-menu-wrap"></div>

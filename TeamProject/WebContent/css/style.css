@@ -1753,7 +1753,23 @@ ol {
 	color: #636363;
 	font-size: 16px;
 	line-height: 39px;
+	padding-left: 20px;
 }
+
+.filter-widget .filter-catagories .check-menu {
+	background-color: #5584b1;
+/* 	background-color: #85c1e5; */
+}
+
+.filter-widget .filter-catagories .check-menu a{
+	color: #f8f3ea;
+}
+
+.filter-widget .filter-catagories li:hover {
+	background-color: #85c1e5;
+	color: #f8f3ea;
+}
+
 
 .filter-widget .fw-brand-check .bc-item {
 	margin-bottom: 3px;
@@ -3779,7 +3795,8 @@ ol {
 }
 
 .register-form h2,
-.login-form h2 {
+.login-form h2
+.user_info_form h2 { /* 적용 재확인 필요 */
 	color: #252525;
 	font-weight: 700;
 	text-align: center;
@@ -3903,6 +3920,61 @@ ol {
 	color: #6B6B6B;
 }
 
+/* 추후 수정
+.user_info_form form {
+	margin-left: 20px;
+}
+
+.user_info_form table {
+	margin: 0 auto;
+}
+
+.user_info_form td {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.user_info_form .label_td {
+	width: 100px;
+}
+
+.user_info_form label {
+	font-size: 18px;
+	color: #eb500a;
+}
+
+.user_info_form input[type="password"], .user_info_form input[type="text"] {
+	width: 240px;
+	height: 25px;
+	padding: 0 10px;
+	border: none;
+	border-bottom: 1px solid #eb500a;
+}
+
+.user_info_form #id {
+	border: none;
+}
+
+.user_info_form .textWithBtn {
+	display: inline-block;
+	width: 200px;
+}
+
+.user_info_form #postBtn {
+	position: relative;
+	left: -55px;
+	display: inline-block;
+	width: 50px;
+	border: 1px solid #eb500a;
+	background-color: #ed8b53;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 3px;
+}
+ */
+ 
 /* ------------------------------ Responsive Media Styles ---------------------------- */
 
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
