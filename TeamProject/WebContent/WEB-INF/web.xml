@@ -34,4 +34,25 @@
   </servlet-mapping>
   <!-- 게시판관리 -->
   
+  <!--product  -->
+  <servlet>
+  <servlet-name>ProductFrontController</servlet-name>
+    <servlet-class>net.product.action.ProductFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductFrontController</servlet-name>
+    <url-pattern>*.p</url-pattern>
+  </servlet-mapping>
+  <!--product  -->
+
+  <!-- adminProduct  -->
+  <servlet>
+    <servlet-name>AdminProductFrontController</servlet-name>
+    <servlet-class>net.admin.product.action.AdminProductFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminProductFrontController</servlet-name>
+    <url-pattern>*.ap</url-pattern>
+  </servlet-mapping>
+  <!-- adminProduct  -->
 </web-app>

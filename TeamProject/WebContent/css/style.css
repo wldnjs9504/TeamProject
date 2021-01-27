@@ -475,7 +475,7 @@ ol {
 	height: 100%;
 	border: none;
 	font-size: 16px;
-	color: #d1d1d1;
+	color: #737981;
 	padding-left: 20px;
 }
 
@@ -3795,8 +3795,8 @@ ol {
 }
 
 .register-form h2,
-.login-form h2
-.user_info_form h2 { /* 적용 재확인 필요 */
+.login-form h2,
+.member-info-form h2 {
 	color: #252525;
 	font-weight: 700;
 	text-align: center;
@@ -3804,7 +3804,8 @@ ol {
 }
 
 .register-form form .group-input,
-.login-form form .group-input {
+.login-form form .group-input,
+.member-info-form form .group-input {
 	margin-bottom: 25px;
 }
 
@@ -3823,6 +3824,17 @@ ol {
 	width: 100%;
 	padding-left: 20px;
 	padding-right: 15px;
+}
+
+
+.register-form .group-input #postcode {
+	width: 70%;
+}
+
+
+.register-form .post,
+.member-info-form .post{
+	float: right;
 }
 
 .register-form form .register-btn,
@@ -3920,60 +3932,44 @@ ol {
 	color: #6B6B6B;
 }
 
-/* 추후 수정
-.user_info_form form {
-	margin-left: 20px;
-}
 
-.user_info_form table {
-	margin: 0 auto;
-}
-
-.user_info_form td {
+.member-info-form table {
 	font-size: 18px;
-	font-weight: bold;
-	padding: 10px 0;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	border-collapse: separate;
+	border-spacing: 10px;
 }
 
-.user_info_form .label_td {
+.member-info-form th {
+	width: 180px;
+}
+
+.member-info-form form input {
+	border: none;
+	border-bottom: 1px solid #ebebeb;
+	height: 50px;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+.member-info-form #postcode {
+	width: 70%;
+}
+
+.member-info-form .check-btn {
+	text-align: center;
+}
+
+.member-info-form .check-btn>input {
 	width: 100px;
+	margin: 0 30px;
 }
 
-.user_info_form label {
-	font-size: 18px;
-	color: #eb500a;
+.member-info-form a{
+	color: #254e7b;
 }
-
-.user_info_form input[type="password"], .user_info_form input[type="text"] {
-	width: 240px;
-	height: 25px;
-	padding: 0 10px;
-	border: none;
-	border-bottom: 1px solid #eb500a;
-}
-
-.user_info_form #id {
-	border: none;
-}
-
-.user_info_form .textWithBtn {
-	display: inline-block;
-	width: 200px;
-}
-
-.user_info_form #postBtn {
-	position: relative;
-	left: -55px;
-	display: inline-block;
-	width: 50px;
-	border: 1px solid #eb500a;
-	background-color: #ed8b53;
-	color: #fff;
-	cursor: pointer;
-	font-weight: bold;
-	border-radius: 3px;
-}
- */
  
 /* ------------------------------ Responsive Media Styles ---------------------------- */
 

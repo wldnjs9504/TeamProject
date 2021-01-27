@@ -3,7 +3,7 @@
 <div class="advanced-search">
 	<button type="button" class="category-btn">All Categories</button>
 	<div class="input-group">
-		<input type="text" placeholder="What do you need?">
+		<input type="text" class="search" placeholder="What do you need?">
 	<button type="button"><i class="ti-search"></i></button>
 	</div>
 </div>

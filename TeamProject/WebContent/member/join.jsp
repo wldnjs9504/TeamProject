@@ -66,14 +66,13 @@
                                 <input type="text" id="con-pass">
                             </div>
                             <div class="group-input">
-                                <label for="username">이메일 *</label>
+                                <label for="email">이메일 *</label>
                                 <input type="text" id="username">
                             </div>                            
                             <div class="group-input">
                                 <label for="address">주소 *</label>
                                 <input type="text" id="postcode" placeholder="우편번호">
-                                <!-- 우편번호 찾기 버튼 위치 변경 예정 -->
-                                <button class="site-btn">찾기</button>
+                                <button class="site-btn post">찾기</button>
                                 <input type="text" id="address1" placeholder="주소">
                                 <input type="text" id="address2" placeholder="상세 주소">
                             </div>                            
