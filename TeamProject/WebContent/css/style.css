@@ -3796,7 +3796,8 @@ ol {
 
 .register-form h2,
 .login-form h2,
-.member-info-form h2 {
+.member-info-form h2,
+.register-product-form h2 {
 	color: #252525;
 	font-weight: 700;
 	text-align: center;
@@ -3805,7 +3806,8 @@ ol {
 
 .register-form form .group-input,
 .login-form form .group-input,
-.member-info-form form .group-input {
+.member-info-form form .group-input,
+.register-product-form form .group-input {
 	margin-bottom: 25px;
 }
 
@@ -3826,11 +3828,9 @@ ol {
 	padding-right: 15px;
 }
 
-
 .register-form .group-input #postcode {
 	width: 70%;
 }
-
 
 .register-form .post,
 .member-info-form .post{
@@ -3932,7 +3932,6 @@ ol {
 	color: #6B6B6B;
 }
 
-
 .member-info-form table {
 	font-size: 18px;
 	margin-left: 50px;
@@ -3958,11 +3957,13 @@ ol {
 	width: 70%;
 }
 
-.member-info-form .check-btn {
+.member-info-form .check-btn,
+.register-product-form .check-btn {
 	text-align: center;
 }
 
-.member-info-form .check-btn>input {
+.member-info-form .check-btn>input,
+.register-product-form .check-btn>input {
 	width: 100px;
 	margin: 0 30px;
 }
@@ -3970,7 +3971,46 @@ ol {
 .member-info-form a{
 	color: #254e7b;
 }
+
+.register-product-form table {
+	border-collapse: separate;
+	border-spacing: 0 20px;
+	margin-bottom: 30px;
+}
+
+.register-product-form th {
+	width: 100px;
+	text-align: right;
+}
+
+.register-product-form label {
+	margin: 0 10px 0 0;
+}
+
+.register-product-form form input,
+.register-product-form form select {
+	border: 1px solid #ebebeb;
+	height: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.register-product-form input[type='text'],
+.register-product-form form select,
+.register-product-form input[type='file'] {
+	width: 100%;
+	vertical-align: middle;
+}
  
+.register-product-form input[type='number'] {
+	width: 100%;
+}
+
+.register-product-form input[type='file'] {
+	width: 100%;
+	padding-top: 9px;
+}
+  
 /* ------------------------------ Responsive Media Styles ---------------------------- */
 
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {

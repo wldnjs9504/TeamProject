@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>Model2Study</display-name>
+  <display-name>TeamProject</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -10,49 +10,39 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <!-- 컨트롤러(서블릿)와 url 연결 -->
+	<!-- 컨트롤러(서블릿)와 url 연결 -->
   
-  <!-- 회원관리 -->
-  <servlet>
-  	<servlet-name>MemberFrontController</servlet-name>
-  	<servlet-class>net.member.action.MemberFrontController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>MemberFrontController</servlet-name>
-  	<url-pattern>*.me</url-pattern>
-  </servlet-mapping>
-  <!-- 회원관리 -->
-  
-  <!-- 게시판관리 -->
-  <servlet>
-  	<servlet-name>BoardFrontController</servlet-name>
-  	<servlet-class>net.board.action.BoardFrontController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>BoardFrontController</servlet-name>
-  	<url-pattern>*.bo</url-pattern>
-  </servlet-mapping>
-  <!-- 게시판관리 -->
-  
-  <!--product  -->
-  <servlet>
-  <servlet-name>ProductFrontController</servlet-name>
-    <servlet-class>net.product.action.ProductFrontController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ProductFrontController</servlet-name>
-    <url-pattern>*.p</url-pattern>
-  </servlet-mapping>
-  <!--product  -->
+	<!--product  -->
+	<servlet>
+		<servlet-name>ProductFrontController</servlet-name>
+		<servlet-class>net.product.action.ProductFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductFrontController</servlet-name>
+		<url-pattern>*.p</url-pattern>
+	</servlet-mapping>
+	<!--product  -->
 
-  <!-- adminProduct  -->
-  <servlet>
-    <servlet-name>AdminProductFrontController</servlet-name>
-    <servlet-class>net.admin.product.action.AdminProductFrontController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AdminProductFrontController</servlet-name>
-    <url-pattern>*.ap</url-pattern>
-  </servlet-mapping>
-  <!-- adminProduct  -->
+	<!-- adminProduct  -->
+	<servlet>
+		<servlet-name>AdminProductFrontController</servlet-name>
+		<servlet-class>net.admin.product.action.AdminProductFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminProductFrontController</servlet-name>
+		<url-pattern>*.ap</url-pattern>
+	</servlet-mapping>
+	<!-- adminProduct  -->
+  
+	<!-- 관리자 상품 리스트 -->
+	<servlet>
+		<servlet-name>AdminOrderFrontController</servlet-name>
+		<servlet-class>net.admin.order.action.AdminOrderFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminOrderFrontController</servlet-name>
+		<url-pattern>*.ao</url-pattern>
+	</servlet-mapping>
+	<!-- 관리자 상품 리스트 -->
+	 
 </web-app>
