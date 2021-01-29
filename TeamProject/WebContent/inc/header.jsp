@@ -8,6 +8,8 @@ String id = (String)session.getAttribute("id");
 	<div class="header-top">
 		<div class="container">
 			<div class="ht-right">
+				<a href="./AdminOrderList.ao" class="login-panel"><i class="fa fa-user"></i>관리자 주문</a>
+				<a href="./ProductList.ap" class="login-panel"><i class="fa fa-user"></i>관리자 상품</a>
 			<%if(id == null || id.isEmpty()) { %>
 				<a href="<%=request.getContextPath() %>/member/join.jsp" class="login-panel"><i class="fa fa-user"></i>Join</a>
 				<a href="<%=request.getContextPath() %>/member/login.jsp" class="login-panel"><i class="fa fa-user"></i>Login</a>
@@ -101,13 +103,13 @@ String id = (String)session.getAttribute("id");
 		<div class="container">
 			<nav class="nav-menu mobile-menu">
 				<ul>
-					<li id="m01"><a href="<%=request.getContextPath() %>/board/board.jsp">전체</a></li>
-					<li id="m01"><a href="<%=request.getContextPath() %>/board/board.jsp?category=1">피로/간</a></li>
-					<li id="m02"><a href="<%=request.getContextPath() %>/board/board.jsp?category=2">수면/스트레스</a></li>
-					<li id="m03"><a href="<%=request.getContextPath() %>/board/board.jsp?category=3">피부</a></li>
-					<li id="m04"><a href="<%=request.getContextPath() %>/board/board.jsp?category=4">눈</a></li>
-					<li id="m05"><a href="<%=request.getContextPath() %>/board/board.jsp?category=5">두뇌활동</a></li>
-					<li id="m06"><a href="<%=request.getContextPath() %>/board/board.jsp?category=6">심장/혈관/혈당</a></li>
+					<li id="m01"><a href="./ProductList.p?category=0">전체</a></li>
+					<li id="m01"><a href="./ProductList.p?category=1">피로/간</a></li>
+					<li id="m02"><a href="./ProductList.p?category=2">수면/스트레스</a></li>
+					<li id="m03"><a href="./ProductList.p?category=3">피부</a></li>
+					<li id="m04"><a href="./ProductList.p?category=4">눈</a></li>
+					<li id="m05"><a href="./ProductList.p?category=5">두뇌활동</a></li>
+					<li id="m06"><a href="./ProductList.p?category=6">심장/혈관/혈당</a></li>
 				</ul>
 			</nav>
 			<div id="mobile-menu-wrap"></div>
